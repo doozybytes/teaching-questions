@@ -1,12 +1,8 @@
-import sys
 
-# Goal: handle a command line argument.
-#  Take in two numbers, sum them, then return the sum
+# Goal: read two numbers from input and sum them together
 
 def main():
-    if len(sys.argv) <= 1:
-        raise Exception("Not enough params provided")
-    print(sys.argv[1])
+    ...
 
 if __name__ == "__main__":
     main()

@@ -1,25 +1,12 @@
+import sys
 
 # Goal: handle a command line argument.
-# It should handle two flags
-#   --sum {integers}
-#   --mult {integers}
-# When run with the respective flags it shoudld return the 
-# sum or product of the provided numbers
-
-import argparse
-
-parser = argparse.ArgumentParser(
-    prog="MyProgram",
-    description="I handle different inputs",
-)
-
-parser.add_argument('integers', metavar='N', type=int, nargs='+', help='an integer for the accumulator')
-parser.add_argument('--sum', ...)
-parser.add_argument('--mult', ...)
-
+#  Take in two numbers, sum them, then return the sum
 
 def main():
-    ...
+    if len(sys.argv) <= 1:
+        raise Exception("Not enough params provided")
+    print(sys.argv[1])
 
 if __name__ == "__main__":
     main()
